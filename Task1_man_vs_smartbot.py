@@ -13,7 +13,7 @@
 
 
 from random import randint
-box = 221
+box = 2021
 min_pos = 1
 max_pos = 28
 
