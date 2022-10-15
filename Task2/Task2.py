@@ -1,25 +1,25 @@
 # Реализуйте RLE алгоритм: реализуйте модуль сжатия и восстановления данных.
 
 # Decoding text
-# with open('start_text.txt', 'r') as data:
-#     text = data.read()
-# print(f'Start text: {text}')
-# def text_coding(t):
-#     str_code = ''
-#     count = 1
-#     for i in range(len(t) - 1):
-#         if t[i] == t[i + 1]:
-#             count += 1
-#         else:
-#             str_code += str(count) + t[i]
-#             count = 1
-#     if count > 1 or (t[len(t) - 2]) != t[-1]:
-#         str_code += str(count) + t[-1]
-#     with open('encoded_text.txt', 'w') as data:
-#         data.write(str_code)
-#     return str_code
-# str_code = text_coding(text)
-# print(f'Decoded text: {str_code}')
+with open('start_text.txt', 'r') as data:
+    text = data.read()
+print(f'Start text: {text}')
+def text_coding(t):
+    str_code = ''
+    count = 1
+    for i in range(len(t) - 1):
+        if t[i] == t[i + 1]:
+            count += 1
+        else:
+            str_code += str(count) + t[i]
+            count = 1
+    if count > 1 or (t[len(t) - 2]) != t[-1]:
+        str_code += str(count) + t[-1]
+    with open('encoded_text.txt', 'w') as data:
+        data.write(str_code)
+    return str_code
+str_code = text_coding(text)
+print(f'Decoded text: {str_code}')
 
 # Uncoding text
 
